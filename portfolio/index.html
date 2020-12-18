@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Portfolio | Daniel Silva</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-container">
+      <a href="#forside">
+        <img class="logo1" src="img/logo1.png" alt="logo">
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+      <!--  <li> <a class="nav-link" href="#forside">FORSIDE</a></li>-->
+        <li> <a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+        <li> <a class="nav-link" href="#info">OM MIG</a></li>
+        <li> <a class="nav-link" href="#kontakt">KONTAKT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div id="forside">
+    <div class="logo-forside">
+      <img class="main-logo" src="img/logo1.png" alt="logo">
+    </div>
+    <div class="pil-forside">
+      <a href="#portfolio">
+        <img class"pil-ned" src="img/index/pil-ned.png" alt="pil ned">
+      </a>
+    </div>
+  </div>
+
+  <div id="portfolio">
+    <div class="titel-portfolio">
+      <h2 class="h2-portfolio">PORTFOLIO</h2>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-container1">
+
+        <a href="1sem.html"> <img class="portfolio-img" src="img/index/1sem-icon.png" alt="1. semester"></a>
+
+        <img class="portfolio-img" src="img/index/2sem-icon.png" alt="2. semester">
+        <img class="portfolio-img" src="img/index/3sem-icon.png" alt="3. semester">
+      </div>
+      <div class="portfolio-container2">
+        <img class="portfolio-img" src="img/index/4sem-icon.png" alt="4.semester">
+        <img class="portfolio-img" src="img/index/logodes-icon.png" alt="logo-design">
+        <img class="portfolio-img" src="img/index/grafdes-icon.png" alt="grafisk-design">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="page-art"></div>
+
+  <section id="info">
+    <h2 class="h2-info">OM MIG</h2>
+    <div class="content-info">
+      <div class="introduction">
+        <div class="info-text">
+          <h3 class="h3-info">HVEM ER JEG?</h3>
+          <p class="p-info">Hej! Mit navn er <strong>Daniel Silva</strong>, og jeg er 21 år gammel. Til hverdag læser jeg <strong>multimediedesign</strong> på <strong>Copenhagen Business Academy</strong> i Lyngby. Lige p.t. er jeg i gang med mit første semester, hvor jeg - indtil videre
+            – har lært at arbejde i diverse <strong>Adobe-programmer</strong>, blandt andet <strong>Photoshop</strong>, <strong>XD</strong>, <strong>Illustrator</strong> og <strong>Premiere Pro</strong>. Jeg har også lært en del om <strong>HTML</strong>, <strong>CSS</strong> og <strong>projektstyring</strong>. <br> Jeg elsker at <strong>designe</strong> og være <strong>kreativ</strong>, og generelt bare at skabe
+            flotte, visuelle produkter – <strong>et billede siger jo mere end tusind ord</strong>. Hvis du har lyst til at lære mig bedre at kende, så har jeg produceret en kort video, hvor jeg fortæller om mig selv.</p>
+        <a add target="_blank "href="pdf/cv-daniel-silva.pdf">  <img class="button-img" src="img/button-cv.png" height="34px" width="110px" alt="download cv"></a>
+        </div>
+      </div>
+
+      <div class="info-video">
+        <iframe class="video" width="720" height="410" src="https://www.youtube.com/embed/NDdn3vA4Z9Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="kontakt">
+
+    <div class="kontakt-headline">
+      <h2 class="h2-kontakt">ER VI ET MATCH?</h2>
+    </div>
+
+    <div class="kontakt-subline">
+      <h3 class="h3-kontakt">KONTAKT MIG HER</h3>
+    </div>
+
+    <div class="kontakt-container">
+
+      <div class="kontaktformular">
+        <form class="form">
+          <!-- form bruges når user'en skal udfylde noget/lave input -->
+          <p type="Dit navn:"><input placeholder="Peter Parker"></input></p> <!-- <input> skaber elementer hvor brugeren kan udfylde data -->
+          <p type="Din e-mail:"><input placeholder="therealspiderman@gmail.com"></input></p>
+          <p type="Dit telefonnummer:"><input placeholder="12345678"></input></p>
+          <p type="Din besked:"><input placeholder="Hvad har du på hjerte?"></input></p>
+          <button><img class="send-knap"height="34px" width="110" src="img/button-send-04.png" alt="send besked"></button> <!-- skaber en knap -->
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <footer>Copyright &copy; 2020 || Daniel Silva</footer>
+
+</body>
+
+</html>

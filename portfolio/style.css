@@ -1,0 +1,672 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header .logo1 {
+  margin-left: 4px;
+  margin-top: 1px;
+  height: 80px;
+  width: 90px;
+  opacity: 0.9;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 80px;
+  align-items: center;
+  background-color: #ffffff;
+  position: fixed;
+  opacity: 0.9;
+}
+
+.logo-container, .nav-links {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+nav {
+  flex: 0.55;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:visited {
+  color: black;
+}
+
+.nav-link:hover {
+  color: #E24140;
+}
+
+.nav-links {
+  list-style: none;
+  justify-content: space-around;
+}
+
+.logo-forside {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.pil-forside {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  opacity: 0.6;
+  transition: opacity 0.25s;
+}
+
+.pil-forside:hover {
+  opacity: 1;
+}
+
+#forside {
+  background-image: url(img/port-bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 680px;
+  margin-top: 7px;
+}
+
+#portfolio {
+  background-color: #ffffff;
+}
+
+.titel-portfolio {
+  display: flex;
+  justify-content: center;
+}
+
+.h2-portfolio {
+  padding-top: 68px;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: black;
+}
+
+.portfolio-grid {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 248px;
+}
+
+.portfolio-img {
+  border-radius: 4%;
+  transition: transform 0.25s;
+}
+
+.portfolio-img:hover {
+  -webkit-transform: scale(0.95);
+  /*Understøtter Chrome, Safari, Opera */
+  -ms-transform: scale(0.95);
+  /*Understøtter Internet Explorer // Edge*/
+  -moz--transform: scale(0.95);
+  /*Understøtter Mozilla Firefox* https://www.w3schools.com/cssref/css3_browsersupport.asp/*/
+  transform: scale(0.95);
+  /*Bruges til at skalere elementet ned da værdien er under 1)*/
+}
+
+.page-art {
+  background-image: url("img/port-bg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 220px;
+}
+
+#info {
+  width: 90%;
+  margin: auto;
+  height: auto;
+  align-items: center;
+  background-color: #ffffff;
+  padding-bottom: 44px;
+}
+
+.h2-info {
+  padding-top: 68px;
+  margin-bottom: 24px;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+}
+
+.content-info {
+  display: flex;
+}
+
+.introduction {
+  flex: 1;
+}
+
+.info-video {
+  flex: 1;
+}
+
+.h3-info {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 450;
+  color: black;
+  margin-bottom: -24px;
+}
+
+.p-info {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 18px;
+  max-width: 90%;
+  /*font-weight: 400;*/
+  /*font-weight fjernet her fordi ellers er det ikke muligt at lave <strong> på individuelle ord i teksten*/
+  color: black;
+  line-height: 26px;
+}
+
+.button-img {
+  margin-top: 15px;
+  opacity: 0.8;
+  transition: opacity 0.25s;
+}
+
+.button-img:hover {
+  opacity: 1;
+}
+
+#kontakt {
+  background-image: url(img/port-bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: auto;
+  font-family: 'Montserrat', helvetica, sans-serif;
+}
+
+.kontakt-headline {
+  justify-content: center;
+  display: flex;
+  padding-top: 68px;
+}
+
+.h2-kontakt {
+  font-size: 60px;
+  font-weight: 600;
+  color: black;
+}
+
+.kontakt-subline {
+  display: flex;
+  justify-content: center;
+}
+
+.h3-kontakt {
+  font-size: 32px;
+  font-weight: 450;
+  color: #E24140;
+  text-align: center;
+}
+
+.kontakt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 400px;
+  height: 446px;
+  font-family: 'Montserrat', helvetica, sans-serif;
+}
+
+input {
+  width: 100%;
+  padding-top: 2px;
+  padding-left: 10px;
+  padding-bottom: 4px;
+  color: black;
+  background: none;
+  /*ingen baggrund*/
+  border: 0;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 18px;
+  transition: all .4s;
+  border-bottom: 2px solid black
+}
+
+input:focus {
+  /*det input-felt, der er i brug*/
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+p:before {
+  content: attr(type);
+  /*content bruges til at 'indsætte' ny input / erstatte et element. attr indsætter en bestemt atributs 'værdi', i dette tilfælde 'type', som er koblet sammen med navn, e-mail osv i kontaktformularen*/
+  display: block;
+  margin: 28px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+button {
+  width: 110px;
+  height: 34px;
+  margin-top: 10px;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 0;
+  float: right;
+  color: white;
+  background-color: #E24140;
+  transition: opacity .25s;
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+footer {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+#sem1 {
+  background-color: #ffffff;
+}
+
+.titel-sem1 {
+  display: flex;
+  justify-content: center;
+}
+
+.h2-sem1 {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: black;
+  margin-top: 70px;
+}
+
+.sem1-grid {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 248px;
+  padding-top: 44px;
+  background-image: url(img/port-bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.sem1-img {
+  border-radius: 4%;
+  transition: transform 0.25s;
+}
+
+.sem1-img:hover {
+  -webkit-transform: scale(0.95);
+  /*Understøtter Chrome, Safari, Opera */
+  -ms-transform: scale(0.95);
+  /*Understøtter Internet Explorer // Edge*/
+  -moz--transform: scale(0.95);
+  /*Understøtter Mozilla Firefox* https://www.w3schools.com/cssref/css3_browsersupport.asp/*/
+  transform: scale(0.95);
+  /*Bruges til at skalere elementet ned da værdien er under 1)*/
+}
+
+.button-img-rap {
+  opacity: 0.8;
+  transition: opacity 0.25s;
+  margin-top: 8px;
+}
+
+.button-img-rap:hover {
+  opacity: 1;
+}
+
+.button-img-rap2 {
+  opacity: 0.8;
+  transition: opacity 0.25s;
+  margin-top: 0px;
+
+}
+
+.button-img-rap2:hover {
+  opacity: 1;
+}
+
+/*CSS TIL FLOW 1*/
+#sem1flow1 {
+  margin: auto;
+  height: auto;
+  align-items: center;
+  background-color: #ffffff;
+  max-width: 90%;
+}
+
+figcaption {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #808080;
+}
+
+.tilbage {
+  position: fixed;
+  margin-top: 124px;
+  margin-left: 12px;
+  opacity: 0.6;
+  transition: opacity 0.25s;
+}
+
+.tilbage:hover {
+  opacity: 1;
+}
+
+.h2-s1f1 {
+  padding-top: 78px;
+  margin-bottom: 24px;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+}
+
+.content-s1f1 {
+  display: flex;
+  margin-top: 50px;
+}
+
+.oprin-s1f1 {
+  flex: 2;
+}
+
+.remake-s1f1 {
+  flex: 1;
+}
+
+.h3-pb {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 450;
+  color: black;
+}
+
+.p-pb {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 16px;
+  max-width: 65%;
+  font-weight: 400;
+  color: black;
+  margin-top: -28px;
+  line-height: 24px;
+}
+
+.img-s1f1 {
+  transition: opacity .25s;
+  opacity: 0.65;
+}
+
+.img-s1f1:hover {
+  opacity: 1;
+}
+
+.img-remake-s1f1 {
+  border: 2px solid lightgray;
+  transition: opacity .25s;
+  opacity: 0.65;
+}
+
+.img-remake-s1f1:hover {
+  opacity: 1;
+}
+
+.img-remake-s1f3-4 {
+  transition: opacity .25s;
+  opacity: 0.65;
+}
+
+.img-remake-s1f3-4:hover {
+  opacity: 1;
+}
+
+.h3-change {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 450;
+  color: black;
+  text-align: center;
+}
+
+.p-change {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  margin-top: -24px;
+  margin-bottom: 28px;
+  line-height: 24px;
+}
+
+.change-text {
+  max-width: 100%;
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
+.refleksion-s1f1 {
+  max-width: 100%;
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
+.h3-refleksion {
+  text-align: center;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 450;
+  color: black;
+}
+
+.p-refleksion {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  margin-top: -24px;
+  margin-bottom: 28px;
+  line-height: 24px;
+}
+
+/*CSS TIL FLOW 2*/
+.p-pb2 {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  width: 65%;
+  margin-top: -18px;
+  line-height: 24px;
+}
+
+ul {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  margin-top: 4px;
+  line-height: 24px;
+}
+
+/*CSS TIL FLOW 3*/
+.p-pb3 {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  width: 65%;
+  margin-top: -18px;
+  line-height: 24px;
+}
+
+/*CSS TIL FLOW 5*/
+.flow5-pdf-link {
+  color: black;
+}
+
+.flow5-pdf-link:visited {
+  color: black;
+}
+
+.flow5-pdf-link:hover {
+  color: #E24140;
+}
+
+.a-flow5 {
+  color: black;
+}
+
+.a-flow5:visited {
+  color: black;
+}
+
+.a-flow5:hover {
+  color: #E24140;
+}
+
+.opr-rem {
+  display: flex;
+  margin-top: 28px;
+  max-width: 100%;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.row1 {
+  flex: 0.5;
+}
+
+.row1-text {
+  width: 75%;
+  margin-left: 70px;
+}
+
+.row2 {
+  flex: 0.5;
+}
+
+.row2-text {
+  width: 80%;
+}
+
+.h3-row {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 450;
+  color: black;
+}
+
+.p-row {
+  font-family: 'Montserrat', helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  margin-top: -24px;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 800px) {
+  .h2-portfolio, .h2-info, .h2-kontakt {
+    font-size: 30px;
+  }
+
+.main-logo {
+  height: 300px;
+  width: 350px;
+}
+
+.pil-ned {
+  height: 20px;
+  width: 20px;
+}
+
+  .h3-info, .h3-kontakt {
+    font-size: 16px;
+  }
+
+  .nav-link {
+    font-size: 10px;
+  }
+
+  .portfolio-grid {
+    flex-direction: column;
+    font-size: 40px;
+  }
+
+  .portfolio-img {
+    height: 130px;
+    width: 130px;
+  }
+
+  .page-art {
+    height: 84px;
+  }
+
+
+  .p-info {
+    font-size: 12px;
+    width: 200%;
+  }
+iframe {
+  display: none;
+}
+
+  .form {
+    width: 200px;
+    height: 223px;
+  }
+
+  input {
+    font-size: 12px;
+  }
+
+  .button-img {
+    width: 90px;
+    height: 24px;
+  }
+
+  .send-knap {
+    width: 90px;
+    height: 24px;
+  }
+}
